@@ -504,7 +504,7 @@ if ( typeof Object.create !== 'function' ) {
 			},
 			setElements: function(type) {
 				var self = this;
-        if(!self.options.zoomEnabled){return false;}
+				 if(!self.options.zoomEnabled){return false;}
 				if(type=="show"){
 					if(self.isWindowSet){
 						if(self.options.zoomType == "inner") {self.showHideWindow("show");}
@@ -517,7 +517,6 @@ if ( typeof Object.create !== 'function' ) {
 				if(type=="hide"){
 					if(self.options.zoomType == "window") {self.showHideWindow("hide");}
 					if(!self.options.tint) {self.showHideWindow("hide");}
-					if(self.options.showLens) {self.showHideLens("hide");}
 					if(self.options.tint) {	self.showHideTint("hide");}
 				}   
 			},
